@@ -1,0 +1,29 @@
+{
+  "name": "aug11ssr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node transpile",
+    "build": "webpack ./client --mode=production"
+  },
+  "presets": [
+    "env",
+    "react"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/register": "^7.10.5",
+    "@reach/router": "^1.3.4",
+    "ejs": "*",
+    "express": "^4.17.1",
+    "ignore-styles": "^5.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

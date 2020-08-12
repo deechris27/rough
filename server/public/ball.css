@@ -1,0 +1,68 @@
+@keyframes bounce {
+    50%{
+        transform: translateY(-20px)
+    }
+}
+
+@keyframes shrink {
+    50%{
+        transform: scale(0.9)
+    }
+}
+
+.login-button{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ball-container{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.outer-ball{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background: black;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    animation: bounce 2s ease-in infinite;
+}
+
+.inner-ball{
+   background: white;
+   height: 70px;
+   width: 70px;
+   border-radius: 100%;
+   text-align: center;
+   position: relative;
+   margin-top: 20px;
+   border: 2px solid black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 15px;
+   transition: all 1s;
+}
+
+.ball-shadow{
+    height: 50px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: darkgray;
+    opacity: 0.5;
+    animation: shrink 2s ease-in infinite;
+}
